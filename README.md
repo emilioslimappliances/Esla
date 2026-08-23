@@ -1,3 +1,4 @@
+<img width="446" height="448" alt="logo-2" src="https://github.com/user-attachments/assets/808f32af-ac2e-4e98-9de8-ca9e8e70d8ec" />
 <img width="446" height="448" alt="logo-3" src="https://github.com/user-attachments/assets/2631c267-a5ab-46f3-8c63-6e1dbaec1684" />
 <img width="446" height="448" alt="logo-3" src="https://github.com/user-attachments/assets/a2f22e0c-8e1b-4699-a0d2-714d908fba07" />
 # ESLA Appliances — Installable Web App (PWA)
