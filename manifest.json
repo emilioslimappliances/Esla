@@ -1,0 +1,19 @@
+{
+  "name": "Emilio S. Lim Appliances",
+  "short_name": "ESLA",
+  "description": "The leader in self-financed and personalized installment sales — appliances since 1967.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0E1B5C",
+  "theme_color": "#0E1B5C",
+  "icons": [
+    { "src": "icons/favicon-16.png", "sizes": "16x16", "type": "image/png" },
+    { "src": "icons/favicon-32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
