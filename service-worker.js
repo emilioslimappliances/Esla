@@ -4,12 +4,7 @@ const ASSETS = [
   './manifest.json',
   './icons/icon-192.png',
   './icons/icon-512.png',
-  './icons/apple-touch-icon.png',
-  './images/logo-1.png',
-  './images/logo-2.png',
-  './images/logo-3.png',
-  './images/logo-4.png',
-  './images/logo-5.png'
+  './icons/apple-touch-icon.png'
 ];
 
 self.addEventListener('install', (event) => {
