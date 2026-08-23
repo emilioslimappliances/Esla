@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emilio S. Lim Appliances — Since 1967</title>
+<meta name="description" content="Emilio S. Lim Appliances (ESLA) — the leader in self-financed and personalized installment sales since 1967. Air-conditioners, refrigerators, TVs, washing machines, gas ranges, and electric fans, available in cash or installment. Makati branch.">
+<meta property="og:title" content="Emilio S. Lim Appliances — Since 1967">
+<meta property="og:description" content="The leader in self-financed and personalized installment sales since 1967. Cash and installment plans on air-conditioners, refrigerators, TVs, washing machines, gas ranges, and fans.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://emilioslimappliances.netlify.app/">
+<meta property="og:image" content="https://emilioslimappliances.netlify.app/icons/icon-512.png">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://emilioslimappliances.netlify.app/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Emilio S. Lim Appliances",
+  "alternateName": "ESLA",
+  "description": "The leader in self-financed and personalized installment sales since 1967.",
+  "foundingDate": "1967",
+  "telephone": "+63285711001",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "8/F Unit B, ACT Tower, Salcedo Village, 135 Sen. Gil Puyat Ave",
+    "addressLocality": "Makati City",
+    "addressCountry": "PH"
+  },
+  "url": "https://emilioslimappliances.netlify.app/"
+}
+</script>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0E1B5C">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="ESLA">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0E1B5C;
+    --navy-panel:#1F32A8;
+    --navy-deep:#080F38;
+    --cream:#FFFFFF;
+    --amber:#FFC933;
+    --amber-deep:#F0A400;
+    --gold-light:#FBE7A1;
+    --gold-light-deep:#F3D268;
+    --rust:#FF3B3B;
+    --rust-solid:#F5090F;
+    --steel:#C3CBEE;
+    --steel-light:#8D97C7;
+    --line: rgba(255,255,255,0.16);
+    --display: 'Archivo Black', sans-serif;
+    --body: 'Inter', sans-serif;
+    --mono: 'IBM Plex Mono', monospace;
+  }
+  *{box-sizing:border-box;}
+  .logo-badge{
+    display:inline-flex;align-items:center;justify-content:center;
+    background:linear-gradient(135deg, var(--gold-light), var(--gold-light-deep));
+    border-radius:14px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.25), inset 0 0 0 1px rgba(255,255,255,0.4);
+  }
+  .logo-badge img{display:block;}
+  .nav-logo-badge{padding:6px 14px;}
+  .hero-logo-badge{padding:20px 26px;margin-bottom:28px;}
+  .support-logo-badge{padding:14px 18px;margin:0 auto 20px;}
+  .chat-logo-badge{padding:5px 10px;}
+  .footer-logo-badge{padding:5px 12px;}
+  body{margin:0;background:var(--navy);color:var(--cream);font-family:var(--body);}
+  img,svg{display:block;}
+  a{color:inherit;}
+
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
+
+  /* ---- NAV ---- */
+  header.nav{
+    position:sticky;top:0;z-index:50;
+    background:var(--navy);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1080px;margin:0 auto;}
+  .brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-size:15px;letter-spacing:0.5px;}
+  .brand .badge{
+    background:var(--rust-solid);color:#fff;
+    font-family:var(--mono);font-size:11px;font-weight:600;
+    padding:4px 7px;border-radius:3px;
+  }
+  .nav-right{display:flex;align-items:center;gap:20px;}
+  .nav-install-btn{
+    background:var(--gold-light);color:var(--navy-deep);
+    font-family:var(--body);font-weight:700;font-size:13px;
+    padding:9px 16px;border-radius:4px;border:none;cursor:pointer;
+    display:inline-flex;align-items:center;gap:6px;
+  }
+  .nav-press{
+    font-family:var(--body);font-weight:600;font-size:13.5px;
+    color:var(--cream);text-decoration:none;opacity:0.85;
+  }
+  .nav-press:hover{opacity:1;color:var(--rust);}
+  .nav-cta{
+    background:var(--rust-solid);color:#fff;
+    font-family:var(--body);font-weight:700;font-size:13px;
+    padding:10px 18px;border-radius:4px;text-decoration:none;
+    border:2px solid #fff;
+  }
+
+  /* ---- HERO ---- */
+  .hero{
+    background:var(--navy);
+    color:var(--cream);
+    padding:72px 0 88px;
+    position:relative;
+    overflow:hidden;
+    border-bottom:1px solid var(--line);
+  }
+  .hero::after{
+    content:"";
+    position:absolute;
+    right:-120px;top:-120px;
+    width:420px;height:420px;
+    border-radius:50%;
+    background:radial-gradient(circle, rgba(255,75,75,0.14), transparent 70%);
+  }
+  .hero-inner{max-width:1080px;margin:0 auto;padding:0 24px;position:relative;}
+  .eyebrow{
+    font-family:var(--mono);font-size:12px;letter-spacing:2px;text-transform:uppercase;
+    color:var(--rust);margin-bottom:18px;display:flex;align-items:center;gap:10px;
+  }
+  .eyebrow::before{content:"";width:24px;height:1px;background:var(--rust);}
+  h1.hero-title{
+    font-family:var(--display);
+    font-size:clamp(36px,6vw,64px);
+    line-height:1.04;
+    margin:0 0 20px;
+    max-width:760px;
+    color:var(--cream);
+  }
+  h1.hero-title span{color:var(--rust);}
+  .hero-sub{
+    font-size:17px;line-height:1.6;color:var(--steel);
+    max-width:480px;margin:0 0 32px;
+  }
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn-primary{
+    background:var(--rust-solid);color:#fff;
+    font-weight:700;font-size:14px;padding:14px 24px;border-radius:4px;
+    text-decoration:none;display:inline-block;
+  }
+  .btn-ghost{
+    border:1px solid rgba(255,255,255,0.35);color:var(--cream);
+    font-weight:600;font-size:14px;padding:14px 24px;border-radius:4px;
+    text-decoration:none;display:inline-block;
+  }
+  .hero-stats{
+    display:flex;gap:40px;margin-top:56px;flex-wrap:wrap;
+  }
+  .stat b{display:block;font-family:var(--display);font-size:26px;color:var(--cream);}
+  .stat span{font-size:12px;color:var(--steel);text-transform:uppercase;letter-spacing:1px;}
+  .pay-stat b{font-size:18px;}
+  .card-badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;}
+  .card-badge{
+    font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:0.5px;
+    background:#fff;color:var(--navy);
+    padding:6px 10px;border-radius:4px;
+  }
+
+  /* ---- SECTION LABELS ---- */
+  .section{padding:80px 0;}
+  .section-head{margin-bottom:40px;max-width:560px;}
+  .section-eyebrow{
+    font-family:var(--mono);font-size:12px;color:var(--rust);letter-spacing:1.5px;
+    text-transform:uppercase;margin-bottom:10px;
+  }
+  .section-title{font-family:var(--display);font-size:clamp(26px,4vw,36px);margin:0 0 12px;line-height:1.1;}
+  .section-desc{color:var(--steel);font-size:15px;line-height:1.6;margin:0;}
+
+  /* ---- CATEGORY GRID ---- */
+  .cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line);border:1px solid var(--line);}
+  .cat{
+    background:var(--navy-panel);padding:32px 24px;
+    transition:background 0.15s ease;
+  }
+  .cat:hover{background:#24357E;}
+  .cat svg{width:36px;height:36px;margin-bottom:18px;stroke:var(--cream);}
+  .cat h3{font-family:var(--body);font-weight:700;font-size:16px;margin:0 0 6px;color:var(--cream);}
+  .cat p{font-size:13px;color:var(--steel);margin:0;line-height:1.5;}
+
+  /* ---- PRICE TAG CALCULATOR (signature) ---- */
+  .calc-section{background:var(--navy-panel);color:var(--cream);padding:90px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .calc-section .section-desc{color:var(--steel);}
+  .calc-section .section-title{color:var(--cream);}
+  .calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;margin-top:44px;}
+  @media(max-width:760px){.calc-grid{grid-template-columns:1fr;}}
+
+  .field{margin-bottom:22px;}
+  .field label{
+    display:block;font-family:var(--mono);font-size:11px;letter-spacing:1px;
+    text-transform:uppercase;color:var(--rust);margin-bottom:8px;
+  }
+  .field input[type=range]{width:100%;accent-color:var(--rust-solid);}
+  .field .val{font-family:var(--mono);font-size:20px;font-weight:600;color:var(--cream);}
+  .field select, .field input[type=number]{
+    width:100%;background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.25);color:var(--cream);
+    padding:12px;border-radius:4px;font-family:var(--mono);font-size:15px;
+  }
+
+  /* the actual hanging tag */
+  .tag-wrap{display:flex;justify-content:center;padding-top:8px;}
+  .tag{
+    position:relative;
+    background:var(--amber);
+    color:var(--navy-deep);
+    width:280px;
+    padding:36px 26px 30px;
+    border-radius:10px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.35);
+    transform:rotate(-3deg);
+  }
+  .tag::before{
+    content:"";
+    position:absolute;top:16px;left:50%;transform:translateX(-50%);
+    width:16px;height:16px;border-radius:50%;
+    background:var(--navy);
+    box-shadow: inset 0 0 0 3px var(--amber);
+  }
+  .tag .tag-label{font-family:var(--mono);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;opacity:0.75;margin-top:10px;}
+  .tag .tag-cash{font-family:var(--display);font-size:15px;text-decoration:line-through;opacity:0.55;margin-top:4px;}
+  .tag .tag-monthly{font-family:var(--display);font-size:38px;line-height:1;margin-top:6px;}
+  .tag .tag-monthly small{font-family:var(--body);font-size:13px;font-weight:700;display:block;margin-top:4px;}
+  .tag .tag-down{font-family:var(--mono);font-size:12px;margin-top:16px;padding-top:16px;border-top:1px dashed rgba(20,33,61,0.35);}
+  .calc-note{font-size:12px;color:var(--steel-light);margin-top:18px;text-align:center;max-width:280px;margin-left:auto;margin-right:auto;}
+
+  /* ---- BRANCH ---- */
+  .branch-card{
+    border:1px solid var(--line);border-radius:8px;padding:32px;
+    display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;
+    background:var(--navy-panel);
+  }
+  @media(max-width:700px){.branch-card{grid-template-columns:1fr;text-align:left;}}
+  .branch-tag{
+    font-family:var(--mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;
+    background:var(--rust-solid);color:#fff;padding:6px 10px;border-radius:4px;
+    width:fit-content;
+  }
+  .branch-name{font-family:var(--display);font-size:20px;margin:10px 0 6px;color:var(--cream);}
+  .branch-addr{font-size:14px;color:var(--steel);line-height:1.5;max-width:340px;}
+  .branch-phone{font-family:var(--mono);font-size:20px;font-weight:600;color:var(--cream);}
+  .branch-phone small{display:block;font-family:var(--body);font-size:11px;color:var(--steel);font-weight:400;text-transform:uppercase;letter-spacing:1px;}
+
+  .placeholder-note{
+    margin-top:14px;font-size:12.5px;color:var(--rust);
+    background:rgba(255,75,75,0.08);border:1px dashed rgba(255,75,75,0.35);
+    padding:10px 14px;border-radius:6px;
+  }
+
+  /* ---- 24/7 SUPPORT ---- */
+  .support-section{padding:0 0 80px;}
+  .support-card{
+    background:var(--navy-panel);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:48px 40px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+  }
+  .support-card::before{
+    content:"";position:absolute;left:-100px;bottom:-100px;
+    width:300px;height:300px;border-radius:50%;
+    background:radial-gradient(circle, rgba(255,75,75,0.18), transparent 70%);
+  }
+  .support-logo{height:64px;width:auto;margin:0 auto 20px;border-radius:6px;position:relative;}
+  .support-title{
+    font-family:var(--display);font-size:clamp(20px,3vw,28px);
+    color:var(--cream);margin:0 0 36px;line-height:1.25;
+    max-width:600px;margin-left:auto;margin-right:auto;position:relative;
+  }
+  .support-grid{
+    display:grid;grid-template-columns:1fr 1fr;gap:32px;
+    max-width:520px;margin:0 auto;position:relative;
+  }
+  @media(max-width:560px){.support-grid{grid-template-columns:1fr;}}
+  .support-group{display:flex;flex-direction:column;gap:8px;}
+  .support-label{
+    font-family:var(--mono);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;
+    color:var(--rust);margin-bottom:4px;
+  }
+  .support-phone{
+    font-family:var(--mono);font-size:19px;font-weight:600;
+    color:var(--cream);text-decoration:none;
+  }
+  .support-phone:hover{color:var(--rust);}
+  .support-email-row{
+    margin-top:36px;padding-top:28px;border-top:1px dashed rgba(255,255,255,0.18);
+    display:flex;flex-direction:column;align-items:center;gap:6px;position:relative;
+  }
+  .support-email{
+    font-family:var(--mono);font-size:17px;font-weight:600;
+    color:var(--cream);text-decoration:none;
+  }
+  .support-email:hover{color:var(--rust);}
+
+  /* ---- FOOTER ---- */
+  footer{background:var(--navy-deep);color:rgba(255,255,255,0.55);padding:40px 0;font-size:13px;}
+  .footer-inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;}
+  .footer-inner strong{color:var(--cream);}
+
+  @media(max-width:760px){
+    .cat-grid{grid-template-columns:1fr 1fr;}
+    .hero-stats{gap:28px;}
+  }
+  @media(max-width:480px){
+    .cat-grid{grid-template-columns:1fr;}
+  }
+
+  /* ---- CHAT WIDGET ---- */
+  #chatWidget{position:fixed;right:20px;bottom:20px;z-index:100;font-family:var(--body);}
+  #chatToggle{
+    width:58px;height:58px;border-radius:50%;
+    background:var(--rust-solid);color:#fff;border:none;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 10px 24px rgba(0,0,0,0.35);
+  }
+  #chatToggle svg{width:26px;height:26px;}
+  #chatPanel{
+    display:none;
+    position:absolute;right:0;bottom:74px;
+    width:320px;max-width:calc(100vw - 40px);
+    background:var(--navy-panel);
+    border:1px solid var(--line);
+    border-radius:12px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.45);
+    overflow:hidden;
+  }
+  #chatPanel.open{display:block;}
+  .chat-header{
+    display:flex;align-items:center;gap:10px;
+    padding:16px 18px;background:var(--navy-deep);
+    border-bottom:1px solid var(--line);
+  }
+  .chat-header img{height:24px;width:auto;}
+  .chat-header-title{font-family:var(--display);font-size:13px;color:var(--cream);}
+  .chat-header-sub{font-size:11px;color:var(--steel);display:flex;align-items:center;gap:6px;margin-top:2px;}
+  .chat-dot{width:6px;height:6px;border-radius:50%;background:#3DDC84;display:inline-block;}
+  .chat-body{padding:16px 18px 18px;}
+  .chat-intro{font-size:12.5px;color:var(--steel);line-height:1.5;margin:0 0 12px;}
+  #chatMessage, #chatName{
+    width:100%;background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.2);color:var(--cream);
+    padding:10px 12px;border-radius:6px;font-family:var(--body);font-size:13.5px;
+    margin-bottom:10px;resize:vertical;
+  }
+  #chatMessage::placeholder, #chatName::placeholder{color:var(--steel-light);}
+  .chat-send-options{display:flex;flex-direction:column;gap:8px;margin-top:4px;}
+  .chat-send-btn{
+    display:flex;align-items:center;gap:10px;
+    width:100%;padding:10px 12px;border-radius:6px;border:none;cursor:pointer;
+    font-family:var(--body);font-weight:600;font-size:13px;color:#fff;
+    text-align:left;
+  }
+  .chat-send-btn svg{width:18px;height:18px;flex-shrink:0;}
+  .chat-send-email{background:var(--rust-solid);}
+  .chat-send-fb{background:#1877F2;}
+  .chat-send-ig{background:linear-gradient(45deg,#F58529,#DD2A7B,#8134AF);}
+  .chat-send-wa{background:#25D366;}
+  .chat-send-viber{background:#7360F2;}
+  .chat-note{font-size:11px;color:var(--steel-light);margin:12px 0 0;text-align:center;}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="brand"><div class="logo-badge nav-logo-badge"><img src="images/logo-1.png" alt="ESLA logo" style="height:46px;width:auto;display:block;"></div></div>
+    <div class="nav-right">
+      <button id="installAppBtn" class="nav-install-btn" style="display:none;">Install App</button>
+      <a class="nav-press" href="https://www.philstar.com/other-sections/supplements/2010/08/27/606037/appliances-reach-every-filipino" target="_blank" rel="noopener">Press</a>
+      <a class="nav-cta" href="#calc">Estimate installment</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="logo-badge hero-logo-badge"><img src="images/logo-2.png" alt="Emilio S. Lim Appliances logo" style="height:260px;width:auto;"></div>
+    <div class="eyebrow">The leader in self-financed &amp; personalized installment sales</div>
+    <h1 class="hero-title">Home appliances on <span>your own terms</span>, since 1967.</h1>
+    <p class="hero-sub">Air-conditioners, refrigerators, TVs, washing machines, gas ranges, and fans — available in cash or personalized installment plans built around what you can actually pay.</p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="#catalog">Browse categories</a>
+      <a class="btn-ghost" href="#branch">Visit the branch</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><b>1967</b><span>Est. this year</span></div>
+      <div class="stat"><b>6</b><span>Product categories</span></div>
+      <div class="stat pay-stat">
+        <b>Cash · Installment · Online Payments</b>
+        <span>Payment options</span>
+        <div class="card-badges">
+          <span class="card-badge">VISA</span>
+          <span class="card-badge">Mastercard</span>
+          <span class="card-badge">JCB</span>
+          <span class="card-badge">AMEX</span>
+          <span class="card-badge">UnionPay</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="catalog">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-eyebrow">What we carry</div>
+      <h2 class="section-title">Six categories, one roof.</h2>
+      <p class="section-desc">Every unit below is available for viewing in-branch, with staff who can walk you through cash vs. installment pricing on the spot.</p>
+    </div>
+    <div class="cat-grid">
+      <div class="cat">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="9" rx="1"></rect><path d="M6 15v3M18 15v3M2 10h20"></path></svg>
+        <h3>Air-Conditioners</h3>
+        <p>Split-type and window units for homes and small offices.</p>
+      </div>
+      <div class="cat">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="1"></rect><path d="M5 11h14M9 5.5h.01M9 8h.01"></path></svg>
+        <h3>Refrigerators</h3>
+        <p>Single and two-door models in a range of capacities.</p>
+      </div>
+      <div class="cat">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="1"></rect><path d="M8 21h8M12 17v4"></path></svg>
+        <h3>Televisions</h3>
+        <p>Everyday and smart TV options across common screen sizes.</p>
+      </div>
+      <div class="cat">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="3"></circle><path d="M12 3v2M12 19v2M3 12h2M19 12h2"></path></svg>
+        <h3>Washing Machines</h3>
+        <p>Top-load and twin-tub, sized for apartments to households.</p>
+      </div>
+      <div class="cat">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="1"></rect><path d="M7 9h4M7 13h4M15 9v8"></path></svg>
+        <h3>Gas Ranges &amp; Stoves</h3>
+        <p>Two to four-burner ranges for everyday kitchens.</p>
+      </div>
+      <div class="cat">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"></circle><path d="M12 12c3-4 7-3 7 0s-4 4-7 0M12 12c-3-4-7-3-7 0s4 4 7 0"></path></svg>
+        <h3>Electric Fans</h3>
+        <p>Stand, wall, and ceiling fans for year-round cooling.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="calc-section" id="calc">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-eyebrow" style="color:var(--rust)">Self-financing, our way</div>
+      <h2 class="section-title">See a monthly, not just a price tag.</h2>
+      <p class="section-desc">Slide to a rough monthly estimate. This is a planning tool, not a quote — actual terms are set in-branch based on the unit and your down payment.</p>
+    </div>
+
+    <div class="calc-grid">
+      <div>
+        <div class="field">
+          <label>Unit cash price</label>
+          <div class="val" id="priceVal">₱25,000</div>
+          <input type="range" id="priceRange" min="5000" max="80000" step="500" value="25000">
+        </div>
+        <div class="field">
+          <label>Down payment</label>
+          <div class="val" id="downVal">20%</div>
+          <input type="range" id="downRange" min="10" max="50" step="5" value="20">
+        </div>
+        <div class="field">
+          <label>Term</label>
+          <select id="termSelect">
+            <option value="6">6 months</option>
+            <option value="12" selected>12 months</option>
+            <option value="18">18 months</option>
+            <option value="24">24 months</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <div class="tag-wrap">
+          <div class="tag">
+            <div class="tag-label">Cash price</div>
+            <div class="tag-cash" id="tagCash">₱25,000</div>
+            <div class="tag-monthly" id="tagMonthly">₱1,850<small>per month</small></div>
+            <div class="tag-down">Down payment: <span id="tagDown">₱5,000</span></div>
+          </div>
+        </div>
+        <p class="calc-note">Estimate only, using a sample add-on rate. Ask staff for your exact installment quote.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="branch">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-eyebrow">Visit us</div>
+      <h2 class="section-title">Talk to the branch directly.</h2>
+      <p class="section-desc">Best for checking current stock, exact pricing, and same-day installment approval.</p>
+    </div>
+    <div class="branch-card">
+      <div>
+        <div class="branch-tag">Makati Branch</div>
+        <div class="branch-name">Emilio S. Lim Appliances</div>
+        <div class="branch-addr">8/F Unit B, ACT Tower, Salcedo Village,<br>135 Sen. Gil Puyat Ave, Makati City</div>
+      </div>
+      <div></div>
+      <div class="branch-phone">8571-1001<small>Call the branch</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="support-section" id="support">
+  <div class="wrap">
+    <div class="support-card">
+      <div class="logo-badge support-logo-badge"><img class="support-logo" src="images/logo-3.png" alt="ESLA logo"></div>
+      <h2 class="support-title">Any concerns? Please feel free to call us 24/7!</h2>
+      <div class="support-grid">
+        <div class="support-group">
+          <div class="support-label">Landline</div>
+          <a class="support-phone" href="tel:+63285711001">(02) 8571 1001</a>
+          <a class="support-phone" href="tel:+63288941550">(02) 8894 1550</a>
+        </div>
+        <div class="support-group">
+          <div class="support-label">Mobile</div>
+          <a class="support-phone" href="tel:+639175705357">(0917) 570 5357</a>
+          <a class="support-phone" href="tel:+639175319694">(0917) 531 9694</a>
+        </div>
+      </div>
+      <div class="support-email-row">
+        <span class="support-label">Email</span>
+        <a class="support-email" href="mailto:Eslapaypal@gmail.com">Eslapaypal@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="chatWidget">
+  <button id="chatToggle" aria-label="Open chat">
+    <svg id="chatIconOpen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+    <svg id="chatIconClose" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><path d="M18 6L6 18M6 6l12 12"></path></svg>
+  </button>
+
+  <div id="chatPanel">
+    <div class="chat-header">
+      <div class="logo-badge chat-logo-badge"><img src="images/logo-4.png" alt="ESLA" style="height:32px;width:auto;"></div>
+      <div>
+        <div class="chat-header-title">Chat with ESLA</div>
+        <div class="chat-header-sub"><span class="chat-dot"></span>Available 24/7</div>
+      </div>
+    </div>
+
+    <div class="chat-body">
+      <p class="chat-intro">Type your message, then send it to us on whichever channel you check most. We'll reply from there.</p>
+      <textarea id="chatMessage" placeholder="Hi, I'd like to ask about..." rows="4"></textarea>
+      <input id="chatName" type="text" placeholder="Your name (optional)">
+
+      <div class="chat-send-options">
+        <button class="chat-send-btn chat-send-wa" id="sendWhatsapp">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+          Message on WhatsApp
+        </button>
+        <button class="chat-send-btn chat-send-viber" id="sendViber">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+          Message on Viber
+        </button>
+        <button class="chat-send-btn chat-send-email" id="sendEmail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="M22 6l-10 7L2 6"></path></svg>
+          Send via Email
+        </button>
+        <button class="chat-send-btn chat-send-fb" id="sendFacebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          Message on Facebook
+        </button>
+        <button class="chat-send-btn chat-send-ig" id="sendInstagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg>
+          Message on Instagram
+        </button>
+      </div>
+      <p class="chat-note">Each button opens your message in that app — you'll send it from there.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div style="display:flex;align-items:center;gap:14px;">
+      <div class="logo-badge footer-logo-badge"><img src="images/logo-5.png" alt="ESLA" style="height:26px;width:auto;"></div>
+      <div><strong>Emilio S. Lim Appliances</strong> — ESLA, since 1967</div>
+    </div>
+    <div>Since 1967 · Cash and installment plans available</div>
+  </div>
+</footer>
+
+<script>
+  const priceRange = document.getElementById('priceRange');
+  const downRange = document.getElementById('downRange');
+  const termSelect = document.getElementById('termSelect');
+  const priceVal = document.getElementById('priceVal');
+  const downVal = document.getElementById('downVal');
+  const tagCash = document.getElementById('tagCash');
+  const tagMonthly = document.getElementById('tagMonthly');
+  const tagDown = document.getElementById('tagDown');
+
+  function peso(n){ return '₱' + Math.round(n).toLocaleString('en-PH'); }
+
+  function recalc(){
+    const price = Number(priceRange.value);
+    const downPct = Number(downRange.value);
+    const term = Number(termSelect.value);
+    const downAmt = price * (downPct/100);
+    const financed = price - downAmt;
+    // sample flat add-on rate for illustration only
+    const addOnRatePerYear = 0.18;
+    const totalInterest = financed * addOnRatePerYear * (term/12);
+    const monthly = (financed + totalInterest) / term;
+
+    priceVal.textContent = peso(price);
+    downVal.textContent = downPct + '%';
+    tagCash.textContent = peso(price);
+    tagMonthly.innerHTML = peso(monthly) + '<small>per month · ' + term + ' mos.</small>';
+    tagDown.textContent = peso(downAmt);
+  }
+
+  [priceRange, downRange, termSelect].forEach(el => el.addEventListener('input', recalc));
+  recalc();
+
+  // ---- Chat widget ----
+  const chatToggle = document.getElementById('chatToggle');
+  const chatPanel = document.getElementById('chatPanel');
+  const chatIconOpen = document.getElementById('chatIconOpen');
+  const chatIconClose = document.getElementById('chatIconClose');
+  const chatMessage = document.getElementById('chatMessage');
+  const chatName = document.getElementById('chatName');
+
+  chatToggle.addEventListener('click', () => {
+    const isOpen = chatPanel.classList.toggle('open');
+    chatIconOpen.style.display = isOpen ? 'none' : 'block';
+    chatIconClose.style.display = isOpen ? 'block' : 'none';
+  });
+
+  function buildMessage(){
+    const name = chatName.value.trim();
+    const msg = chatMessage.value.trim() || "Hi, I'd like to ask about your appliances.";
+    return name ? `${msg}\n\n— ${name}` : msg;
+  }
+
+  document.getElementById('sendWhatsapp').addEventListener('click', () => {
+    const msg = buildMessage();
+    window.open(`https://wa.me/639175705357?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
+  });
+
+  document.getElementById('sendViber').addEventListener('click', () => {
+    const msg = buildMessage();
+    window.location.href = `viber://chat?number=%2B639175705357&text=${encodeURIComponent(msg)}`;
+  });
+
+  document.getElementById('sendEmail').addEventListener('click', () => {
+    const body = buildMessage();
+    const subject = 'Website inquiry' + (chatName.value.trim() ? ' from ' + chatName.value.trim() : '');
+    window.location.href = `mailto:Eslapaypal@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  });
+
+  document.getElementById('sendFacebook').addEventListener('click', () => {
+    // Opens the Makati branch page's Messenger thread
+    window.open('https://m.me/61574560641375', '_blank', 'noopener');
+  });
+
+  document.getElementById('sendInstagram').addEventListener('click', () => {
+    // TODO: replace with your confirmed Instagram handle
+    window.open('https://ig.me/m/emilioslimappliances', '_blank', 'noopener');
+  });
+  // ---- PWA: service worker + install prompt ----
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('service-worker.js').catch(() => {});
+    });
+  }
+
+  let deferredInstallPrompt = null;
+  const installBtn = document.getElementById('installAppBtn');
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredInstallPrompt = e;
+    if (installBtn) installBtn.style.display = 'inline-flex';
+  });
+
+  if (installBtn) {
+    installBtn.addEventListener('click', async () => {
+      if (!deferredInstallPrompt) return;
+      deferredInstallPrompt.prompt();
+      await deferredInstallPrompt.userChoice;
+      deferredInstallPrompt = null;
+      installBtn.style.display = 'none';
+    });
+  }
+
+  window.addEventListener('appinstalled', () => {
+    if (installBtn) installBtn.style.display = 'none';
+  });
+</script>
+
+</body>
+</html>
